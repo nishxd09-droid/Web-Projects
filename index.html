@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>character counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Write Stuff 👀</h2>
+
+    <textarea id="text" placeholder="Write something..."></textarea>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <p>
+      Characters Limit : <span id="char">200</span><br>
+      Count: <span id="count">0</span><br>
+      Words: <span id="words">0</span><br>
+      Remaining: <span id="remain">0</span>
+    </p>
+
+    <div class="buttons">
+      <button id="clearBtn">Clear</button>
+      <button id="copyBtn">Copy Text</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
