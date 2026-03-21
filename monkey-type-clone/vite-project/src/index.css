@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #323437;
+  color: #d1d0c5;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #e2b714;
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+/* MAIN CONTAINER */
+.typing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 850px;
+  width: 100%;
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+/* STATS BAR */
+.stats {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  background: #2c2e31;
+  padding: 12px 40px;
+  border-radius: 12px;
+}
+
+.timer {
+  font-size: 2rem;
+  color: #e2b714;
+  font-weight: bold;
+  min-width: 70px;
+  text-align: center;
+}
+
+.wpm, .accuracy {
+  font-size: 1.2rem;
+  color: #646669;
+}
+
+.wpm span, .accuracy span {
+  color: #d1d0c5;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+/* WORDS */
+.words {
+  font-size: 1.5rem;
+  line-height: 2.2;
+  letter-spacing: 1px;
+  background: #2c2e31;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.untyped { color: #646669; }
+.correct { color: #d1d0c5; }
+.wrong   { color: #ca4754; background: #3b1f22; border-radius: 2px; }
+
+/* INPUT */
+.type-input {
+  background: #2c2e31;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #d1d0c5;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  width: 400px;
+  outline: none;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  transition: border 0.2s;
+}
+
+.type-input:focus {
+  border: 2px solid #e2b714;
+}
+
+/* RESULTS */
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+  background: #2c2e31;
+  padding: 60px 80px;
+  border-radius: 16px;
+}
+
+.results h2 {
+  font-size: 1.5rem;
+  color: #646669;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.result-stats {
+  display: flex;
+  gap: 80px;
+}
+
+.result-label {
+  color: #646669;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.result-value {
+  color: #e2b714;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* RESTART BUTTON */
+.restart-btn {
+  background: transparent;
+  border: 2px solid #e2b714;
+  color: #e2b714;
+  padding: 12px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  border-radius: 8px;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.restart-btn:hover {
+  background: #e2b714;
+  color: #323437;
+}
